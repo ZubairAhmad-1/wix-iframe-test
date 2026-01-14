@@ -37,4 +37,12 @@
         <li>✅ Professional presentation</li>
     </ul>
 </body>
+    <script>
+// Add ONLY this listener - keep everything else
+window.addEventListener('message', (event) => {
+  if (event.data === 'FULLSCREEN') {
+    document.querySelector('iframe').requestFullscreen();
+  }
+});
+</script>
 </html>
